@@ -10,6 +10,8 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 button {
   cursor: pointer;
@@ -17,6 +19,69 @@ button {
 
 address {
   font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/*header*/
+
+header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-cont {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contacts-link {
+  display: block;
+  padding: 24px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.contacts {
+  font-style: normal;
+  margin-left: auto;
 }
 
 .logo {
@@ -29,23 +94,23 @@ address {
   color: #4d5ae5;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .header-logo .logo-part {
   color: #2e2f42;
 }
 
 .nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-}
-
-.contacts-link {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
 }
 
 .nav-link:hover,
@@ -55,8 +120,15 @@ address {
   color: #404bbf;
 }
 
+/*hero*/
+
 .hero {
   background-color: #2e2f42;
+}
+
+.hero-sctn {
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -65,9 +137,12 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
 }
 
 .hero-btn {
+  display: block;
+  margin: 0 auto;
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -84,14 +159,35 @@ address {
 .sctn-one {
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.sctn-one-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .sctn-one-title {
-  visibility: hidden;
 }
 
 .sctn-one-list {
+  gap: 24px;
+  display: flex;
 }
 
 .sctn-one-item {
+  width: calc((100% - 72px) / 3);
 }
 
 .sctn-one-subtitle {
@@ -100,6 +196,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .sctn-one-text {
@@ -120,9 +217,12 @@ address {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .sctn-two-list {
+  display: flex;
+  gap: 24px;
 }
 
 .sctn-two-item {
@@ -138,6 +238,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .sctn-two-text {
@@ -145,6 +246,12 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.sctn-two-itemcontainer {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .sctn-three {
