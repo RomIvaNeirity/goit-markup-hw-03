@@ -318,17 +318,19 @@ header {
 }
 
 .footer-logo .logo-part {
-  display: inline-block;
-  margin-bottom: 16px;
   color: #f4f4fd;
 }
 
 .page-footer {
-  background-color: #2e2f42;
-}
-.footer-subcontainer {
   padding-top: 100px;
   padding-bottom: 100px;
+
+  background-color: #2e2f42;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
